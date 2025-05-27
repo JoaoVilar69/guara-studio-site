@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guará Technologies</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 10px;
+        }
+
+        h1 {
+            color: #ff7300;
+            font-size: 32px;
+        }
+
+        .intro {
+            margin: 10px 0 20px;
+        }
+
+        .btn {
+            background-color: #ff7300;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            margin: 10px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .feature {
+            background: #1a1a1a;
+            border: 1px solid #ff7300;
+            border-radius: 10px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+        }
+
+            .feature img {
+                height: 100px;
+                margin-bottom: 10px;
+            }
+
+        .section {
+            background: #111;
+            border: 1px solid #ff7300;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .member {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+            .member img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 2px solid #ff7300;
+                margin-bottom: 10px;
+            }
+
+        .tools {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+            .tools div {
+                text-align: center;
+                width: 160px;
+            }
+
+        .contact {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        .footer-logo {
+            text-align: center;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo Guará" height="60">
+            <h1>Guará Technologies</h1>
+            <p class="intro">Uma plataforma integrada para produção musical digital: MIDI, partitura, sintetizador, Vocaloid e VST em um só lugar.</p>
+            <button class="btn">Baixar Protótipo</button>
+        </header>
+
+        <div class="features">
+            <div class="feature">
+                <img src="pianoroll.png" alt="Editor MIDI">
+                <h3>Editor MIDI com Piano Roll</h3>
+                <p>Edite e reproduza notas com precisão usando uma interface amigável e responsiva.</p>
+            </div>
+            <div class="feature">
+                <img src="partitura.png" alt="Partitura">
+                <h3>Visualização de Partitura</h3>
+                <p>Visualize e edite partituras sincronizadas com o piano roll em tempo real.</p>
+            </div>
+            <div class="feature">
+                <img src="sintetizador.png" alt="Sintetizador e Vocaloid">
+                <h3>Sintetizador & Vocaloid</h3>
+                <p>Use SoundFonts, sintetizador Vital e amostras de voz para simulação Vocaloid.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Sobre o Projeto</h2>
+            <p>Desenvolvido por João Pedro Souza Vilar e Marcos Igor de Arruda Barros, o Guará Studio é um projeto acadêmico da UNIFACOL que visa democratizar a produção musical digital com uma DAW leve, gratuita e multifuncional.</p>
+            <button class="btn">Ver Documentação</button>
+        </div>
+
+        <div class="section">
+            <h2>Quem Somos</h2>
+            <div class="team">
+                <div class="member">
+                    <img src="joao.jpg" alt="João Pedro">
+                    <h3>João Pedro Souza Vilar</h3>
+                    <p>
+                        🔹 Estudante de Sistemas de Informação - UNIFACOL<br>
+                        🔹 Desenvolvedor C++ | JUCE Framework<br>
+                        🎵 Músico e Entusiasta de Áudio Digital<br>
+                        🔹 Foco em desenvolvimento de aplicações de áudio
+                    </p>
+                </div>
+                <div class="member">
+                    <img src="marcos.jpg" alt="Marcos Igor">
+                    <h3>Marcos Igor de Arruda Barros</h3>
+                    <p>
+                        🔹 Estudante de Sistemas de Informação - UNIFACOL<br>
+                        🔹 Designer de Interface e Experiência do Usuário<br>
+                        🔹 Especialista em Qualidade de Software<br>
+                        🔹 Apaixonado por inovação e tecnologia
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Ferramentas</h2>
+            <div class="tools">
+                <div><img src="juce.png" height="60"><p>JUCE Framework (C++)</p></div>
+                <div><img src="vscode.png" height="60"><p>Visual Studio Code + CMake + Ninja</p></div>
+                <div><img src="vst3.png" height="60"><p>VST3 SDK e sintetizador Vital</p></div>
+                <div><img src="github.png" height="60"><p>GitHub (controle de versão)</p></div>
+            </div>
+        </div>
+
+        <div class="section contact">
+            <h2>Contato</h2>
+            <form>
+                <label for="email">E-mail*:</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" rows="4" maxlength="500" placeholder="Digite aqui sua mensagem..."></textarea>
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="footer-logo">
+            <img src="logo-guara.png" alt="Logo Guará Studio" height="80">
+            <h2>Guará Studio</h2>
+        </div>
+    </div>
+</body>
+</html>
